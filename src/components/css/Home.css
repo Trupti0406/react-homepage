@@ -1,0 +1,51 @@
+/* CSS for HomeCover */
+.banner-img {
+  width: 100%;
+  opacity: 0.3;
+}
+
+.banner-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner-logo {
+  position: absolute;
+  opacity: 1;
+}
+
+.banner-logo > img {
+  width: 300px;
+}
+
+.banner-container > p {
+  position: absolute;
+  margin-top: 150px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: black;
+}
+
+h2 {
+  text-decoration: 3px #f79210 underline;
+}
+
+/* Media queries for Banner Container */
+@media only screen and (max-width: 600px) {
+  .banner-logo > img {
+    width: 150px;
+  }
+  .banner-container > p {
+    margin-top: 120px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
