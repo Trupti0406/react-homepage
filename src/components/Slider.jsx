@@ -2,8 +2,7 @@ import React from "react";
 import "./css/Home.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import Product from "./Product";
 
 const responsive = {
   superLargeDesktop: {
@@ -25,313 +24,102 @@ const responsive = {
   },
 };
 
+const productData = [
+  {
+    id: 1,
+    imageUrl: "https://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg",
+    name: "Black T-shirt",
+    price: 659,
+    description:
+      "Allen Solly Men's Plain Regular Fit Polo T-shirt, available in all sizes",
+  },
+  {
+    id: 2,
+    imageUrl: "https://m.media-amazon.com/images/I/61XnG8ZA3lL._AC_UL320_.jpg",
+    name: "Floral Pink Dress",
+    price: 1439,
+    description:
+      "Women's Polyester comfortable A-Line Knee-Length, sleevless Dress",
+  },
+  {
+    id: 3,
+    imageUrl: "https://m.media-amazon.com/images/I/8129Xn87GsL._AC_UL320_.jpg",
+    name: "Formal Suit",
+    price: 4159,
+    description:
+      "Wool Blend Unisex Full Sleeve Slim FIT Medium Blue Formal Suit",
+  },
+  {
+    id: 4,
+    imageUrl:
+      "https://m.media-amazon.com/images/I/51NZaOmbZAL._SX679._SX._UX._SY._UY_.jpghttps://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg",
+    name: "Pyjama-Tshirt set",
+    price: 549,
+    description:
+      "Printed Bear Cartoon, Baby Clothing Set Stripe Pyjama Tshirt Pant",
+  },
+  {
+    id: 5,
+    imageUrl: "https://m.media-amazon.com/images/I/51mF7diIunL._UX679_.jpg",
+    name: "Cotton Hoodie",
+    price: 999,
+    description: "Alan Jones Clothing, Colorblocked Unisex Hoodies Sweatshirt",
+  },
+  {
+    id: 6,
+    imageUrl: "https://m.media-amazon.com/images/I/61kqhTCKtgL._AC_UL320_.jpg",
+    name: "Baby Flannel",
+    price: 664,
+    description:
+      "BRANDONN Unisex Baby Flannel Jumpsuit Panda Style Cosplay Clothes.",
+  },
+  {
+    id: 7,
+    imageUrl: "https://m.media-amazon.com/images/I/61ZG-r4cGHL._SX466_.jpg",
+    name: "Surgicals Suit",
+    price: 714,
+    description:
+      "Surgicals Unisex Scrub Suit set V-Neck 3 Pocket Top and Cargo Type Trouser",
+  },
+  {
+    id: 8,
+    imageUrl: "https://m.media-amazon.com/images/I/71lOb02ErwL._UY741_.jpg",
+    name: "Kurta Palazzo set",
+    price: 1647,
+    description:
+      "Miss Ethnik Women's Faux Georgette Semi Stitched Top With Stitched Faux",
+  },
+  {
+    id: 9,
+    imageUrl:
+      "https://m.media-amazon.com/images/I/31IDm87JoTS._SX300_SY300_QL70_FMwebp_.jpg",
+    name: "Face Mask",
+    price: 199,
+    description:
+      "Lee Cooper Lightweight Cotton Face Mask for Outdoor Protection.",
+  },
+  {
+    id: 10,
+    imageUrl: "https://m.media-amazon.com/images/I/41hTiBWvtDL.jpg",
+    name: "Checked Skirt",
+    price: 1249,
+    description:
+      "Black Checked Front Knot, Buttoned, Below Knee Length, a- line Skirt",
+  },
+];
+
+const products = productData.map((item) => {
+  <Product />;
+});
+
 const Slider = () => {
   return (
     <>
-      <Product />
-      <h2 class="fw-bolder py-3 px-5">Featured Products:</h2>
-      <Carousel responsive={responsive}>
-        <div className=".slide-container">
-          <div class="featured card swiper-slide">
-            <img
-              src="https://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold p-1">Black T-shirt</h5>
-              <p class="price fw-semibold h5">₹ 659</p>
-              <p class="card-text">
-                Allen Solly Men's Plain Regular Fit Polo T-shirt, available in
-                all sizes
-              </p>
-              <button class="add-cart d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCartShopping}
-                  className=".add-to-cart"
-                />
-                <a href="#" class="btn fw-bold">
-                  Add To Cart
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className=".slide-container">
-          <div class="featured card swiper-slide">
-            <img
-              src="https://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold p-1">Black T-shirt</h5>
-              <p class="price fw-semibold h5">₹ 659</p>
-              <p class="card-text">
-                Allen Solly Men's Plain Regular Fit Polo T-shirt, available in
-                all sizes
-              </p>
-              <button class="add-cart d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCartShopping}
-                  className=".add-to-cart"
-                />
-                <a href="#" class="btn fw-bold">
-                  Add To Cart
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className=".slide-container">
-          <div class="featured card swiper-slide">
-            <img
-              src="https://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold p-1">Black T-shirt</h5>
-              <p class="price fw-semibold h5">₹ 659</p>
-              <p class="card-text">
-                Allen Solly Men's Plain Regular Fit Polo T-shirt, available in
-                all sizes
-              </p>
-              <button class="add-cart d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCartShopping}
-                  className=".add-to-cart"
-                />
-                <a href="#" class="btn fw-bold">
-                  Add To Cart
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className=".slide-container">
-          <div class="featured card swiper-slide">
-            <img
-              src="https://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold p-1">Black T-shirt</h5>
-              <p class="price fw-semibold h5">₹ 659</p>
-              <p class="card-text">
-                Allen Solly Men's Plain Regular Fit Polo T-shirt, available in
-                all sizes
-              </p>
-              <button class="add-cart d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCartShopping}
-                  className=".add-to-cart"
-                />
-                <a href="#" class="btn fw-bold">
-                  Add To Cart
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className=".slide-container">
-          <div class="featured card swiper-slide">
-            <img
-              src="https://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold p-1">Black T-shirt</h5>
-              <p class="price fw-semibold h5">₹ 659</p>
-              <p class="card-text">
-                Allen Solly Men's Plain Regular Fit Polo T-shirt, available in
-                all sizes
-              </p>
-              <button class="add-cart d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCartShopping}
-                  className=".add-to-cart"
-                />
-                <a href="#" class="btn fw-bold">
-                  Add To Cart
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className=".slide-container">
-          <div class="featured card swiper-slide">
-            <img
-              src="https://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold p-1">Black T-shirt</h5>
-              <p class="price fw-semibold h5">₹ 659</p>
-              <p class="card-text">
-                Allen Solly Men's Plain Regular Fit Polo T-shirt, available in
-                all sizes
-              </p>
-              <button class="add-cart d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCartShopping}
-                  className=".add-to-cart"
-                />
-                <a href="#" class="btn fw-bold">
-                  Add To Cart
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className=".slide-container">
-          <div class="featured card swiper-slide">
-            <img
-              src="https://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold p-1">Black T-shirt</h5>
-              <p class="price fw-semibold h5">₹ 659</p>
-              <p class="card-text">
-                Allen Solly Men's Plain Regular Fit Polo T-shirt, available in
-                all sizes
-              </p>
-              <button class="add-cart d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCartShopping}
-                  className=".add-to-cart"
-                />
-                <a href="#" class="btn fw-bold">
-                  Add To Cart
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className=".slide-container">
-          <div class="featured card swiper-slide">
-            <img
-              src="https://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold p-1">Black T-shirt</h5>
-              <p class="price fw-semibold h5">₹ 659</p>
-              <p class="card-text">
-                Allen Solly Men's Plain Regular Fit Polo T-shirt, available in
-                all sizes
-              </p>
-              <button class="add-cart d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCartShopping}
-                  className=".add-to-cart"
-                />
-                <a href="#" class="btn fw-bold">
-                  Add To Cart
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className=".slide-container">
-          <div class="featured card swiper-slide">
-            <img
-              src="https://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold p-1">Black T-shirt</h5>
-              <p class="price fw-semibold h5">₹ 659</p>
-              <p class="card-text">
-                Allen Solly Men's Plain Regular Fit Polo T-shirt, available in
-                all sizes
-              </p>
-              <button class="add-cart d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCartShopping}
-                  className=".add-to-cart"
-                />
-                <a href="#" class="btn fw-bold">
-                  Add To Cart
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className=".slide-container">
-          <div class="featured card swiper-slide">
-            <img
-              src="https://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold p-1">Black T-shirt</h5>
-              <p class="price fw-semibold h5">₹ 659</p>
-              <p class="card-text">
-                Allen Solly Men's Plain Regular Fit Polo T-shirt, available in
-                all sizes
-              </p>
-              <button class="add-cart d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCartShopping}
-                  className=".add-to-cart"
-                />
-                <a href="#" class="btn fw-bold">
-                  Add To Cart
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
+      <h2 className="fw-bolder py-3 px-5">Featured Products:</h2>
+      <Carousel responsive={responsive} className=".slide-container">
+        {products}
       </Carousel>
     </>
-  );
-};
-
-const Product = () => {
-  return (
-    <div className=".slide-container">
-      <div class="featured card swiper-slide">
-        <img
-          src="https://m.media-amazon.com/images/I/71WmwSot-vL._AC_UL320_.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-
-        <div class="card-body text-center">
-          <h5 class="card-title fw-bold p-1">Black T-shirt</h5>
-          <p class="price fw-semibold h5">₹ 659</p>
-          <p class="card-text">
-            Allen Solly Men's Plain Regular Fit Polo T-shirt, available in all
-            sizes
-          </p>
-          <button class="add-cart d-flex align-items-center">
-            <FontAwesomeIcon icon={faCartShopping} className=".add-to-cart" />
-            <a href="#" class="btn fw-bold">
-              Add To Cart
-            </a>
-          </button>
-        </div>
-      </div>
-    </div>
   );
 };
 
