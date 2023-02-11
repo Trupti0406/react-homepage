@@ -5,14 +5,14 @@ import logo from "./img/logo.png";
 
 const HomeCover = () => {
   return (
-    <div class="home">
-      <div class="banner-container">
+    <div className="home">
+      <div className="banner-container">
         <img
           src={banner}
-          alt="Banner Image of Clothing store"
-          class="banner-img"
+          alt="Banner of Clothing store"
+          className="banner-img"
         />
-        <div class="banner-logo">
+        <div className="banner-logo">
           <img src={logo} alt="" />
         </div>
         <p>

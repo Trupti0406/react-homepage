@@ -38,8 +38,7 @@ const productData = [
     imageUrl: "https://m.media-amazon.com/images/I/61XnG8ZA3lL._AC_UL320_.jpg",
     name: "Floral Pink Dress",
     price: 1439,
-    description:
-      "Women's Polyester comfortable A-Line Knee-Length",
+    description: "Women's Polyester comfortable A-Line Knee-Length",
   },
   {
     id: 3,
@@ -70,8 +69,7 @@ const productData = [
     imageUrl: "https://m.media-amazon.com/images/I/61kqhTCKtgL._AC_UL320_.jpg",
     name: "Baby Flannel",
     price: 664,
-    description:
-      "BRANDONN Unisex Baby Flannel Jumpsuit Panda Style Cosplay.",
+    description: "BRANDONN Unisex Baby Flannel Jumpsuit Panda Style Cosplay.",
   },
   {
     id: 7,
@@ -86,8 +84,7 @@ const productData = [
     imageUrl: "https://m.media-amazon.com/images/I/71lOb02ErwL._UY741_.jpg",
     name: "Kurta Palazzo set",
     price: 1647,
-    description:
-      "Miss Ethnik Women's Faux Georgette Top With Stitched Faux",
+    description: "Miss Ethnik Women's Faux Georgette Top With Stitched Faux",
   },
   {
     id: 9,
@@ -108,9 +105,11 @@ const productData = [
   },
 ];
 
+
 const products = productData.map((item) => {
   return (
     <Product
+      key={item.id}
       name={item.name}
       url={item.imageUrl}
       price={item.price}

@@ -5,49 +5,50 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
-
-{/* <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />; */}
+{
+  /* <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />; */
+}
 
 const Header = () => {
   return (
     <>
       <header id="header">
         {/* First part of header */}
-        <nav class="navbar navbar-inverse p-2">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="../index.html">
+        <nav className="navbar navbar-inverse p-2">
+          <div className="container-fluid">
+            <div className="navbar-header">
+              <a className="navbar-brand" href="../index.html">
                 <img src={logo} alt="" srcset="" className="logo" />
               </a>
             </div>
-            <form class="navbar-form navbar-left d-flex">
-              <div class="form-group">
+            <form className="navbar-form navbar-left d-flex">
+              <div className="form-group">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Search clothes"
                   name="search"
                 />
               </div>
-              <button type="button" class="btn btn-warning">
+              <button type="button" className="btn btn-warning">
                 <FontAwesomeIcon icon={faSearch} />
               </button>
             </form>
-            <ul class="nav gap-4 navbar-right d-flex align-items-center">
+            <ul className="nav gap-4 navbar-right d-flex align-items-center">
               <li>
-                <button class="login d-flex align-items-center rounded-3">
-                  <a href="../login/login.html" class="btn fw-bold">
+                <button className="login d-flex align-items-center rounded-3">
+                  <a href="../login/login.html" className="btn fw-bold">
                     Login
                   </a>
                 </button>
               </li>
               <li>
-                <a href="../cart/cart.html" class="text-decoration-none">
-                  <div class="cart">
-                    <FontAwesomeIcon icon={faCartShopping} className='cart' />
+                <a href="../cart/cart.html" className="text-decoration-none">
+                  <div className="cart">
+                    <FontAwesomeIcon icon={faCartShopping} className="cart" />
 
                     <span
-                      class="cart-number fw-bold text-black rounded-circle p-1"
+                      className="cart-number fw-bold text-black rounded-circle p-1"
                       id="total__counter"
                     >
                       0
@@ -60,24 +61,24 @@ const Header = () => {
         </nav>
 
         {/* Second Part of header / Navigation Bar */}
-        <ul class="navigation-bar nav justify-content-center fw-semibold">
-          <li class="nav-item">
+        <ul className="navigation-bar nav justify-content-center fw-semibold">
+          <li className="nav-item">
             <a
-              class="nav-link text-black"
+              className="nav-link text-black"
               aria-current="page"
               href="/index.html"
             >
               Home
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-black" href="/pages/allProducts.html">
+          <li className="nav-item">
+            <a className="nav-link text-black" href="/pages/allProducts.html">
               All products
             </a>
           </li>
-          <li class="nav-item dropdown">
+          <li className="nav-item dropdown">
             <a
-              class="nav-link text-black dropdown-toggle"
+              className="nav-link text-black dropdown-toggle"
               data-bs-toggle="dropdown"
               href="#"
               role="button"
@@ -85,32 +86,32 @@ const Header = () => {
             >
               Women
             </a>
-            <ul class="dropdown-menu">
+            <ul className="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="/pages/women/womenAll.html">
+                <a className="dropdown-item" href="/pages/women/womenAll.html">
                   All
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="/pages/women/womenDress.html">
+                <a className="dropdown-item" href="/pages/women/womenDress.html">
                   Dresses
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="/pages/women/womenPants.html">
+                <a className="dropdown-item" href="/pages/women/womenPants.html">
                   Pants
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="/pages/women/womenSkirts.html">
+                <a className="dropdown-item" href="/pages/women/womenSkirts.html">
                   Skirts
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
+          <li className="nav-item dropdown">
             <a
-              class="nav-link text-black dropdown-toggle"
+              className="nav-link text-black dropdown-toggle"
               data-bs-toggle="dropdown"
               href="#"
               role="button"
@@ -118,36 +119,36 @@ const Header = () => {
             >
               Men
             </a>
-            <ul class="dropdown-menu">
+            <ul className="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="/pages/men/menAll.html">
+                <a className="dropdown-item" href="/pages/men/menAll.html">
                   All
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="/pages/men/menShirts.html">
+                <a className="dropdown-item" href="/pages/men/menShirts.html">
                   Shirts
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="/pages/men/menPants.html">
+                <a className="dropdown-item" href="/pages/men/menPants.html">
                   Pants
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="/pages/men/menHoodie.html">
+                <a className="dropdown-item" href="/pages/men/menHoodie.html">
                   Hoodies
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-black" href="/pages/kids.html">
+          <li className="nav-item">
+            <a className="nav-link text-black" href="/pages/kids.html">
               Kids
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-black" href="/contact.html">
+          <li className="nav-item">
+            <a className="nav-link text-black" href="/contact.html">
               Contact
             </a>
           </li>
