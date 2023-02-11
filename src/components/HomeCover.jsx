@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/Home.css";
-import banner from "./img/banner-img.jpg";
-import logo from "./img/logo.png";
+import banner from "../img/banner-img.jpg";
+import logo from "../img/logo.png";
 
 const HomeCover = () => {
   return (

@@ -7,7 +7,7 @@ import Slider from "./Slider";
 const Home = () => {
   return (
     <>
-      <Header /> 
+      <Header />
       <HomeCover />
       <Slider />
       <Footer />
