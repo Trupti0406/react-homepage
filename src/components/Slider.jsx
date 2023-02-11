@@ -39,7 +39,7 @@ const productData = [
     name: "Floral Pink Dress",
     price: 1439,
     description:
-      "Women's Polyester comfortable A-Line Knee-Length, sleevless Dress",
+      "Women's Polyester comfortable A-Line Knee-Length",
   },
   {
     id: 3,
@@ -71,7 +71,7 @@ const productData = [
     name: "Baby Flannel",
     price: 664,
     description:
-      "BRANDONN Unisex Baby Flannel Jumpsuit Panda Style Cosplay Clothes.",
+      "BRANDONN Unisex Baby Flannel Jumpsuit Panda Style Cosplay.",
   },
   {
     id: 7,
@@ -79,7 +79,7 @@ const productData = [
     name: "Surgicals Suit",
     price: 714,
     description:
-      "Surgicals Unisex Scrub Suit set V-Neck 3 Pocket Top and Cargo Type Trouser",
+      "Surgicals Scrub Suit set V-Neck Pocket Top and Cargo Type Trouser",
   },
   {
     id: 8,
@@ -87,7 +87,7 @@ const productData = [
     name: "Kurta Palazzo set",
     price: 1647,
     description:
-      "Miss Ethnik Women's Faux Georgette Semi Stitched Top With Stitched Faux",
+      "Miss Ethnik Women's Faux Georgette Top With Stitched Faux",
   },
   {
     id: 9,
@@ -109,14 +109,21 @@ const productData = [
 ];
 
 const products = productData.map((item) => {
-  <Product />;
+  return (
+    <Product
+      name={item.name}
+      url={item.imageUrl}
+      price={item.price}
+      description={item.description}
+    />
+  );
 });
 
 const Slider = () => {
   return (
     <>
       <h2 className="fw-bolder py-3 px-5">Featured Products:</h2>
-      <Carousel responsive={responsive} className=".slide-container">
+      <Carousel responsive={responsive} className=".slide-container mb-4" style>
         {products}
       </Carousel>
     </>
