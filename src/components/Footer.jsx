@@ -1,5 +1,7 @@
 import React from "react";
 import "./css/Footer.css";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -9,71 +11,69 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
               <h5>
-                <a
+                <Link
                   className="text-decoration-none text-white h4"
-                  href="/pages/women/womenAll.html"
+                  
                 >
                   Women
-                </a>
+                </Link>
               </h5>
 
               <ul className="list-unstyled mb-0">
                 <li>
-                  <a href="/pages/women/womenDress.html" className="text-white">
+                  <Link className="text-white">
                     Dresses
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/pages/women/womenPants.html" className="text-white">
+                  <Link className="text-white">
                     Pants
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/pages/women/womenSkirts.html"
+                  <Link
                     className="text-white"
                   >
                     Skirts
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
             <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
               <h5>
-                <a
+                <Link
                   className="text-decoration-none text-white h4"
-                  href="/pages/men/menAll.html"
                 >
                   Men
-                </a>
+                </Link>
               </h5>
 
               <ul className="list-unstyled mb-0">
                 <li>
-                  <a href="/pages/men/menShirts.html" className="text-white">
+                  <Link className="text-white">
                     Shirts
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/pages/men/menPants.html" className="text-white">
+                  <Link className="text-white">
                     Pants
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/pages/men/menHoodie.html" className="text-white">
+                  <Link className="text-white">
                     Hoodies
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
             <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
               <h5>
-                <a
+                <Link
                   className="text-decoration-none text-white h4"
-                  href="/pages/kids.html"
+                  
                 >
                   kids
-                </a>
+                </Link>
               </h5>
             </div>
             <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -81,19 +81,19 @@ const Footer = () => {
 
               <ul className="list-unstyled mb-0">
                 <li>
-                  <a href="/index.html" className="text-white">
+                  <Link className="text-white">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/login/login.html" className="text-white">
+                  <Link className="text-white">
                     Login
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact.html" className="text-white">
+                  <Link className="text-white">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

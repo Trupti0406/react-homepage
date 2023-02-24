@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/Home.css";
-
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,9 +16,9 @@ const Product = (props) => {
           <p className="card-text">{props.description}</p>
           <button className="add-cart d-flex align-items-center">
             <FontAwesomeIcon icon={faCartShopping} className=".add-to-cart" />
-            <a href="#" className="btn fw-bold">
+            <Link className="btn fw-bold">
               Add To Cart
-            </a>
+            </Link>
           </button>
         </div>
       </div>
