@@ -15,7 +15,7 @@ const Header = () => {
           <div className="container-fluid">
             <div className="navbar-header">
               <Link className="navbar-brand" to="/">
-                <img src={logo} alt="" srcset="" className="logo" />
+                <img src={logo} alt="" srcSet="" className="logo" />
               </Link>
             </div>
             <form className="navbar-form navbar-left d-flex">
